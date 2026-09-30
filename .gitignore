@@ -1,0 +1,7 @@
+
+# Maintainer-private evaluation fixtures (contain canonical answers) - never ship to candidates
+evaluation/
+
+__pycache__/
+*.pyc
+.DS_Store
