@@ -141,3 +141,29 @@
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+.demo-banner {
+  margin: 0 0 12px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #fff8e1;
+  color: #6d5300;
+  font-size: 14px;
+}
+
+.sample-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.sample-chip {
+  text-align: left;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fafafa;
+  cursor: pointer;
+  font-size: 13px;
+}

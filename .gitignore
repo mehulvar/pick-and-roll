@@ -5,6 +5,7 @@ evaluation/
 # Ignore the data directory completely
 data/
 backend/data/
+/demo.json
 
 __pycache__/
 *.pyc

@@ -1,5 +1,8 @@
 <div class="app-container">
   <h1>{{ title }}</h1>
+  <div *ngIf="demoMode" class="demo-banner">
+  Demo mode: recorded responses from the local system. Pick a sample question below.
+</div>
   <div class="chat-container">
     <div class="messages">
       <div *ngIf="messages.length === 0" class="empty-state">
@@ -32,7 +35,9 @@
     </div>
 
     <div *ngIf="errorMessage" class="error-banner">{{ errorMessage }}</div>
-
+<div *ngIf="demoMode" class="sample-list">
+  <button type="button" *ngFor="let q of sampleQuestions" class="sample-chip" (click)="askSample(q)" [disabled]="isLoading">{{ q }}</button>
+</div>
     <form (ngSubmit)="sendMessage()" class="input-area">
       <input
         [(ngModel)]="userInput"

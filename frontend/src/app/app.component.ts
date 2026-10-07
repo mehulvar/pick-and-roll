@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { ChatService, Evidence } from './services/chat.service';
+import { ChatService, Evidence, DEMO_MODE } from './services/chat.service';
 
 /** One turn in the chat transcript. */
 interface Message {
@@ -24,8 +24,22 @@ export class AppComponent {
   isLoading = false;
   /** Set when the last request failed; cleared on the next send. */
   errorMessage: string | null = null;
+  demoMode = DEMO_MODE;
+  sampleQuestions: string[] = [];
 
-  constructor(private chatService: ChatService) {}
+  constructor(private chatService: ChatService) {
+    if (this.demoMode) {
+      this.chatService.loadDemo().subscribe((entries) => {
+        this.sampleQuestions = entries.map((e) => e.question);
+      });
+    }
+  }
+
+  /** Fills the input with a sample question and sends it (demo mode). */
+  askSample(question: string): void {
+    this.userInput = question;
+    this.sendMessage();
+  }
 
   /**
    * Sends the current input as a question to the backend, appends the user

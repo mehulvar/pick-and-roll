@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What was the final score of the Outlaws' game against the Bison on April 12, 2026, and who won?",
+    "answer": "winner: Outlaws, opponent: Bison, margin: 18, score: 128-110",
+    "evidence": [
+      {
+        "table": "game_details",
+        "id": 100841
+      }
+    ]
+  },
+  {
+    "question": "Who led the Outlaws in scoring in their loss against the Herons on April 5, 2026, and how many points did he score?",
+    "answer": "points: 23, games: 1, player name: Devonte Abbott",
+    "evidence": [
+      {
+        "table": "game_details",
+        "id": 100805
+      },
+      {
+        "table": "player_box_scores",
+        "id": 100805,
+        "game_id": 100805,
+        "person_id": 40792
+      }
+    ]
+  },
+  {
+    "question": "How many points did Kwame Ellison-Reyes score against the Vultures on October 29, 2025?",
+    "answer": "points: 55, games: 1, player name: Kwame Ellison-Reyes",
+    "evidence": [
+      {
+        "table": "game_details",
+        "id": 100039
+      },
+      {
+        "table": "player_box_scores",
+        "id": 100039,
+        "game_id": 100039,
+        "person_id": 89156
+      }
+    ]
+  },
+  {
+    "question": "What was the largest deficit the Outlaws overcame to win a game this season, and who were they playing?",
+    "answer": "opponent: Ospreys, deficit: 14, score: 125-124",
+    "evidence": [
+      {
+        "table": "game_details",
+        "id": 100006
+      },
+      {
+        "table": "game_recaps",
+        "id": 6
+      }
+    ]
+  },
+  {
+    "question": "Who hit the go-ahead basket in the Outlaws' 125-124 win over the Ospreys on October 22, 2025?",
+    "answer": "player name: Samir Zimmer",
+    "evidence": [
+      {
+        "table": "game_details",
+        "id": 100006
+      },
+      {
+        "table": "game_recaps",
+        "id": 6
+      },
+      {
+        "table": "player_box_scores",
+        "id": 100006,
+        "game_id": 100006,
+        "person_id": 17023
+      }
+    ]
+  },
+  {
+    "question": "Why did Kwame Ellison-Reyes miss the Outlaws' game against the Wranglers on February 20, 2026?",
+    "answer": "status: out, reason: calf",
+    "evidence": [
+      {
+        "table": "injury_notes",
+        "id": 2166
+      },
+      {
+        "table": "game_details",
+        "id": 100563
+      }
+    ]
+  },
+  {
+    "question": "How many points did Deshawn Carver score in the Outlaws' season opener?",
+    "answer": "The data cannot answer this question.",
+    "evidence": []
+  },
+  {
+    "question": "How many points did Kwame Ellison-Reyes score against the Wranglers on February 20, 2026?",
+    "answer": "The data cannot answer this question.",
+    "evidence": []
+  }
+]
