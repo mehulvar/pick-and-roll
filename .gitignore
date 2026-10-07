@@ -2,6 +2,10 @@
 # Maintainer-private evaluation fixtures (contain canonical answers) - never ship to candidates
 evaluation/
 
+# Ignore the data directory completely
+data/
+backend/data/
+
 __pycache__/
 *.pyc
 .DS_Store
