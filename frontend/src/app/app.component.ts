@@ -17,7 +17,7 @@ interface Message {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'AI Engineering Sandbox';
+  title = 'Pick and Roll';
   messages: Message[] = [];
   userInput = '';
   /** True while a request to the backend is in flight. */
